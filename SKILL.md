@@ -17,7 +17,7 @@ node scripts/open_dashboard_node.mjs
 
 ## 运行要求与数据
 
-- 使用 Node.js 22.13+（本机已验证 22.22.3）。无需 Python，也无需安装 npm 依赖。若 `node` 不在 PATH，查找已安装的兼容解释器；不要调用旧 Python 启动脚本。
+- 使用 Node.js 22.13+，无需安装 npm 依赖。若 `node` 不在 PATH，查找已安装的兼容 Node 解释器。
 - 服务只监听本机；可通过 `COUSASH_NODE_PORT` 指定端口。若端口属于其他服务，报告冲突，不自动结束该进程。
 - 默认只读 `~/.codex` 中的原始日志，支持 `CODEX_HOME`。会话索引与远程快照保存在 `~/.codex/cousash-node-usage.sqlite`，原始日志不被修改。
 - 支持原有筛选、日期区间、会话及子代理详情、快照导入导出，以及近 30 分钟、1/3/5/10 小时、自定义起止时间、每日趋势和月历热力图。

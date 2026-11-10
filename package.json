@@ -10,8 +10,7 @@
     "start": "node scripts/open_dashboard_node.mjs",
     "serve": "node scripts/codex_usage_dashboard.mjs",
     "skill:install": "node scripts/install_skill.mjs",
-    "test": "node --test tests/*.test.mjs",
-    "test:legacy": "node --test tests/legacy/*.test.mjs"
+    "test": "node --test tests/*.test.mjs"
   },
   "repository": {
     "type": "git",

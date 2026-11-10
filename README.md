@@ -4,7 +4,7 @@
 
 ## 快速启动
 
-需要 **Node.js 22.13 或更新版本**。运行时使用 Node 内置模块和随仓库提供的 Chart.js，无需 Python、API Key 或 `npm install`。
+仅需 **Node.js 22.13 或更新版本**。运行时使用 Node 内置模块和随仓库提供的 Chart.js，无需 API Key 或 `npm install`。
 
 ```bash
 git clone https://github.com/WebsonLeo/codex-usage-dashboard.git
@@ -64,16 +64,7 @@ Codex 会发现新技能；如果列表尚未更新，重新启动 Codex。路�
 npm test
 ```
 
-默认测试仅依赖 Node，覆盖用量解析、去重、SQLite 索引、时间范围、快照接口、图表数据、启动器和技能安装。测试使用临时数据。
-
-仓库保留原 Python 实现作兼容参考。可选的对照及 Python 回归测试需要 Python 3.11+：
-
-```bash
-npm run test:legacy
-python3 -m unittest discover -s tests -p 'test_*.py' -v
-```
-
-Node/Python 对照测试默认调用 `python3`，可用 `PYTHON` 环境变量指定解释器。Python 文件不参与默认 Node 启动和 skill 安装。
+测试使用 Node 内置测试运行器，覆盖用量解析、去重、SQLite 索引、时间范围、快照接口、图表数据、启动器和技能安装。测试使用临时数据。
 
 ## 第三方资源
 
