@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 用量仪表盘"
+  short_description: "一键打开本地 Codex 用量仪表盘，查看消耗趋势、热力图和会话明细"
+  default_prompt: "使用 $codex-usage-dashboard 启动并打开我的本地用量仪表盘。"

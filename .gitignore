@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.jsonl
+.codex-test-report.json
+coverage/
+test-results/
